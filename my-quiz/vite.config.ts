@@ -3,9 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.BASE_PATH || "/",
-  build: {
-    outDir: "dist",
-    assetsDir: "assets",
-  },
+  base: "/my-quiz/",
 });
