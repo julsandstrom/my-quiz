@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following is true about the Map object?",
+    "answers": [
+      "Keys can only be strings or numbers",
+      "The order of elements is guaranteed",
+      "Map does not have a .size property"
+    ],
+    "correctAnswer": "The order of elements is guaranteed"
+  },
+  {
+    "id": 2,
+    "question": "What is the difference between var, let, and const?",
+    "answers": [
+      "var has function scope, while let and const have block scope",
+      "var and let are hoisted, but const is not",
+      "All three are identical but differ in syntax      "
+    ],
+    "correctAnswer": "var has function scope, while let and const have block scope"
+  },
+  {
+    "id": 3,
+    "question": "Which of these array methods creates a shallow copy of the array?",
+    "answers": [
+      "Array.prototype.splice()",
+      "Array.prototype.slice()",
+      "Array.prototype.filter()"
+    ],
+    "correctAnswer": "Array.prototype.slice()"
+  },
+  {
+    "id": 4,
+    "question": "What is the purpose of the Promise.race() method?",
+    "answers": [
+      "Resolves or rejects with the fastest Promise",
+      "Resolves only when all Promises are fulfilled",
+      "Rejects if any Promise is rejected"
+    ],
+    "correctAnswer": "Resolves or rejects with the fastest Promise"
+  },
+  {
+    "id": 5,
+    "question": "Which statement about the delete operator is true?",
+    "answers": [
+      "It removes a property from an object",
+      "It removes an item from an array",
+      "It deallocates memory used by a variable"
+    ],
+    "correctAnswer": "It removes a property from an object"
+  }
+]
