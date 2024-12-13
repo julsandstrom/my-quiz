@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Question from "./components/Questions";
 import AnswerChoices from "./components/AnswerChoices";
 import DisplayResult from "./components/DisplayResult";
+import ResetButton from "./components/ResetButton";
 
 import "./App.css";
 import TimerDisplay from "./components/TimerDisplay";
@@ -46,6 +47,12 @@ function App() {
     setGameStarted(true);
     setScore(0);
     setCurrentQuestionIndex(0);
+    setGameState({
+      ...gameState,
+      isAnswerRevealed: false,
+      isButtonDisabled: false,
+      timer: 10,
+    });
   };
 
   //--------------------------------------------FETCH
@@ -140,7 +147,8 @@ function App() {
         </section>
       )}
       {/* //--------------------------------------------Game Ended */}
-      {gameFinished && <DisplayResult score={score} onResetGame={resetGame} />}
+      {gameFinished && <DisplayResult score={score} />}
+      {gameStarted && <ResetButton onResetGame={resetGame} />}
     </main>
   );
 }
